@@ -1,0 +1,237 @@
+header {
+  .container-fluid .logo {
+    font-weight: 700;
+    cursor: pointer;
+
+    p a {
+      color: var(--color2);
+      text-decoration: none;
+    }
+  }
+
+  .main-menu__right div button {
+    color: #4A2B04;
+  }
+
+  .main-menu__right div button:hover {
+    background-color: #F9BE72;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  .FooterDiv1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    .Lgos p:nth-child(1) a {
+        color: #14212A;
+        font-size: 33px;
+      text-decoration: none;
+      font-weight: 700;
+      span {
+      color: #f5900d;
+      }
+    }
+
+    .Lgos p:nth-child(2) {
+      width: 300px;
+      font-size: 13px;
+      line-height: 150%;
+      font-weight: 300;
+    }
+
+    .Lgos h1 span {
+        color: #f5900d;
+    }
+  }
+
+  .FooterDiv2 {
+    // display: flex;
+    // row-gap: 50px;
+    // flex-direction: column
+    .OtherLinks {
+      display: flex;
+      line-height: 30px;
+      ul {
+        list-style: none;
+
+        li a {
+          color: black;
+          text-decoration: none;
+        }
+        li a:hover {
+            color: #f5900d;
+        }
+      }
+    }
+    .OtherLinks ul li:nth-child(1) {
+      font-weight: 700;
+      margin-bottom: -1px;
+    }
+    .OtherLinks ul li {
+      font-weight: 300;
+      font-size: 13px;
+      // color: black;
+    }
+    .OtherLinks ul li:hover {
+      cursor: pointer;
+      color: var(--color1);
+    }
+  }
+}
+
+.path {
+  // margin-top: -180px;
+  h2 {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 164.7px;
+    color: transparent;
+    -webkit-text-stroke: 1px #f5900d;
+  }
+}
+
+
+// @media (max-width: 852px) {
+
+//   .path {
+//     h2 {
+//       background-color: rgb(4, 0, 255);
+//       font-size: 83.3px;
+//     }
+//   }
+// }
+
+// @media (min-width: 500px) {
+//   footer {
+//     padding: 10px;
+//     display: flex;
+//     // gap: 40px;
+//     flex-direction: column;
+//     .OtherLinks ul {
+//       margin-left: -20px;
+//     }
+//   }
+
+//   .path {
+//     h2 {
+//       background-color: rgb(238, 97, 97);
+//       font-weight: 900;
+//       // flex-wrap: nowrap;
+//       font-size: 345.5%;
+//     }
+//   }
+// }
+
+// @media (max-width: 867px) {
+//   footer {
+//     padding: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     // .OtherLinks ul {
+//     //   margin-left: -20px;
+//     // }
+//   }
+
+//   .path {
+//     h2 {
+//       background-color: rgb(115, 0, 255);
+//       font-weight: 900;
+//       font-size: 545.5%;
+//     }
+//   }
+// }
+
+
+// /* Styles for screens up to 600px wide */
+// @media (max-width: 390px) {
+//   /* Your styles here */
+//   .path {
+//     h2 {
+//       background-color: red;
+//       font-size: 42vw;
+//     }
+//   }
+// }
+
+// /* Styles for screens between 601px and 900px wide */
+// @media (min-width: 601px) and (max-width: 900px) {
+//   /* Your styles here */
+//   .path {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     h2 {
+//       background-color: rgb(123, 0, 255);
+//       font-weight: 900;
+//       font-size: 5.5vw;
+//     }
+//   }
+// }
+
+// /* Styles for screens between 901px and 1200px wide */
+// @media (min-width: 901px) and (max-width: 1200px) {
+//   /* Your styles here */
+//   .path {
+//     h2 {
+//       background-color: rgb(0, 255, 68);
+//       font-weight: 900;
+//       font-size: 9.5vw;
+//     }
+//   }
+// }
+
+/* Styles for screens larger than 1200px wide */
+// @media (min-width: 1201px) {
+//   /* Your styles here */
+//   .path {
+//     h2 {
+//       background-color: rgb(255, 0, 174);
+//     }
+//   }
+// }
+
+@media all {
+
+  footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .OtherLinks ul {
+          margin-left: -20px;
+        }
+      }
+  .path {
+    h2 {
+      // background-color: rgb(255, 0, 4);
+      font-size: 10.7vw;
+    }
+  }
+}
+
+@media (min-width: 730px) and (max-width: 1728px) {
+  footer {
+    // background-color: red;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    // .OtherLinks ul {
+    //   margin-left: -20px;
+    // }
+  }
+}
+
+@media (min-width: 30px) and (max-width: 1200px) {
+  header {
+    .main-menu__right div button {
+      display: none;
+    }
+  }
+} 
