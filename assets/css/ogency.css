@@ -11726,8 +11726,9 @@ body.boxed-wrapper .main-slider__one-item__shape-1 {
   flex-direction: column;
   gap: 20px;
   margin-bottom: 1rem;
-  box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
   background-color: #e9e9ef;
+  min-width: 400px;
 }
 .service .HPs h2 {
   background-color: rgba(255, 166, 0, 0.162);
@@ -11749,7 +11750,20 @@ body.boxed-wrapper .main-slider__one-item__shape-1 {
   font-size: 1.2rem;
   line-height: 2.5;
   font-weight: 400;
-  margin-left: -3rem;
+  margin-left: -2rem;
+}
+
+.service .Ps p::before {
+  content: '';
+  background-image: url('/assets/images/checked.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  position: relative;
+  left: -2rem;
+  top: 33px;
+  width: 20px;
+  height: 20px;
 }
 
 .dropdown {
@@ -11764,7 +11778,7 @@ body.boxed-wrapper .main-slider__one-item__shape-1 {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   font-size: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 2.25rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -11777,7 +11791,8 @@ body.boxed-wrapper .main-slider__one-item__shape-1 {
   color: #fff;
   padding: 15px;
   border: none;
-  font-size: 10px;
+  font-weight: 500;
+  font-size: 13px;
   border-radius: 0.25rem;
   cursor: pointer;
 }
@@ -11786,21 +11801,121 @@ body.boxed-wrapper .main-slider__one-item__shape-1 {
 }
 
 .VpnSec {
-  margin: 110px 0;
+  margin-bottom: 40px;
   padding: 30px;
 }
 
 .VpnSec h1 {
-  font-size: 5vw;
+  font-size: 2vw;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.VPNS {
+.VPNS{
   max-width: 100vw;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 5rem;
+}
+
+.DIvo {
+  /* background-color: red; */
+  height: 900px;
+  padding: 10px;
+  margin-top: 100px;
+}
+.Sheader, .Yheader{
+  background-image: url('/assets/images/What-is-VPN-1280x800.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+  text-align: center;
+}
+
+.Yheader {
+  width: 119rem;
+}
+
+.Yheader h2 {
+  color: white;
+  font-weight: 800;
+}
+
+.Yheader p {
+  color: orange;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+.Sheader h2 {
+  font-size: 1.9vw;
+  font-weight: 800;
+  color: white;
+}
+
+.Sheader p {
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: orange;
+}
+
+.Yus, .Yus2{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Yus h2 {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.YusDiv {
+  padding: 20px;
+  column-gap: 150px;
+  row-gap: 50px;
+  /* min-width: 200px; */
+}
+
+.YusDiv2 {
+  padding: 20px;
+  column-gap: 80px;
+  display: flex;
+  margin-top: 5rem;
+}
+.YusDiv2 div {
+  background-color: #e9e9ef;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 30px;
+  width: 400px;
+  min-width: 400px;
+}
+.YusDiv2 p:first-of-type {
+  color: orange;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+/* .YusDiv2 p {
+  color: red;
+  font-size: .85vw;
+} */
+.YusDiv div {
+  width: 350px;
+  height: 200px;
+  padding: 30px;
+  background-color: #e9e9ef;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.YusDiv div p:first-of-type {
+  color: orange;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 800;
 }

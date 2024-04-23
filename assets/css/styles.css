@@ -17,8 +17,8 @@ header .main-menu__right div button:hover {
 
 footer {
   display: flex;
-  justify-content: space-between;
-  padding: 50px;
+  justify-content: space-around;
+  /* gap: 65rem; */
 }
 footer .FooterDiv1 {
   display: flex;
@@ -72,11 +72,10 @@ footer .FooterDiv2 .OtherLinks ul li:hover {
 
 .path h2 {
   display: flex;
-  align-items: end;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 164.7px;
+  transform: translate(.8%);
   color: transparent;
   -webkit-text-stroke: 1px #f5900d;
 }
@@ -92,25 +91,62 @@ footer .FooterDiv2 .OtherLinks ul li:hover {
     margin-left: 20px;
   }
   .path h2 {
-    font-size: 10.7vw;
+    font-size: 10vw;
   }
 }
-@media (min-width: 730px) and (max-width: 1728px) {
+
+@media (min-width: 30px) and (max-width: 870px) {
+  .YusDiv {
+    display: grid; 
+  }
+  .DIvo {
+    margin-bottom: 890px;
+ }
+}
+
+@media (min-width: 870px) and (max-width: 1928px) {
   footer {
     padding: 10px;
     display: flex;
+    gap: 0;
+    justify-content: space-between;
     flex-direction: row;
   }
   footer .OtherLinks ul {
     margin-left: 20px;
   }
-  
+  .DIvo {
+     margin-bottom: 170px;
+  }
+  .YusDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .YusDiv2 p {
+    font-size: .85vw;
+  }
 }
-@media (min-width: 30px) and (max-width: 1200px) {
+
+@media (min-width: 1370px) and (max-width: 1928px) {
+  .YusDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 30px) and (max-width: 1420px) {
   .VPNS {
     flex-direction: column;
   }
-
+  .YusDiv2 {
+    /* background-color: red; */
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 500px;
+  }
+  .YusDiv2 p {
+    font-size: 1.5vw;
+  }
   header .main-menu__right div button {
     display: none;
   }
