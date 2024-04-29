@@ -91,7 +91,7 @@ footer .FooterDiv2 .OtherLinks ul li:hover {
     margin-left: 20px;
   }
   .path h2 {
-    font-size: 10vw;
+    font-size: 11.5vw;
   }
 }
 
@@ -142,10 +142,10 @@ footer .FooterDiv2 .OtherLinks ul li:hover {
     /* background-color: red; */
     flex-direction: column;
     row-gap: 30px;
-    max-width: 500px;
+    min-width: 200px;
   }
   .YusDiv2 p {
-    font-size: 1.5vw;
+    /* font-size: 3.5vw; */
   }
   header .main-menu__right div button {
     display: none;
